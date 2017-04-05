@@ -2,11 +2,12 @@
 <html>
 <head>
 	<meta charset="UTF-8">
-	<title>Title of the document</title>
+	<title>Dating Website Part 1</title>
 </head>
 
 <body>
-	<form acction="">
+<h1>Please Enter Your Details For Our Dating Website!</h1>
+	<form acction="https://../">
 		<fieldset>
 			<legend>Your Face</legend>
 
@@ -38,12 +39,12 @@
 
 			<label for Country>Which Country: </label>
 			<select  id="Country" name="Country" >
-				<option value="no selection"></option>
+				<option value="no selection"selected="">No selection</option>
 				<option value="volvo">USA</option>
 				<option value="saab">UK</option>
 				<option value="fiat">LT</option>
 				<option value="audi">FR</option> 
-				<option value="audi">AU</option><br>
+				<option value="audi">AU</option>
 			</select>
 		</fieldset>
 
@@ -53,7 +54,7 @@
 			<label for height>Hight: </label>
 			Short <input type="range" min = "0"  max = "100" step= "1" value = "50" id="height" name="height"> Tall<br>
 
-			<label for salary>Hight: </label>
+			<label for salary>Salary: </label>
 			Poor <input type="range" min = "0"  max = "100" step= "1" value = "60" id="salary" name="salary"> Rich<br>
 		</fieldset>
 
@@ -67,14 +68,14 @@
 			<input type="tel" id = "tel" name="tel"><br>
 
 			<label for address > Address: </label>
-			<input type="textarea" id = "address" name="address"><br>
+			<textarea row="3" cols="23" id="address" name="address"></textarea><br>
 
 			<label for contacttype>Method to contact you:</label>
 			<input type="checkbox" id = "ckb_email" name="ckb_email" value="email"> Email
 			<input type="checkbox" id = "ckb_Whatsapp" name="ckb_Whatsapp" value="Whatsapp">Whatsapp
 			<input type="checkbox" id = "ckb_Inappchat" name="ckb_Inappchat" value="Inappchat">In-app Chat
 		</fieldset>
-
+		<br>
 		<input type="submit" value="Submit">
 	</form>
 </body>

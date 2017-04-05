@@ -2,25 +2,21 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Dating Website</title>
+    <title>Dating Website Part 2</title>
     <style>
 
 		fieldset {
 			background: lightyellow;
-			border-width: 20px;
-			border: solid yellow;
+			border: 10px solid yellow;
 			margin-bottom:10px;
 			width:720px;
-			vertical-align:top;
 		}
 		label {
 			width:180px;
 			display: inline-block;
 			text-align:right;
-			text-align:top;
+			vertical-align:top;
 		}
-        label:hover { font-size:40px }
-        input:hover { font-size:20px }
 		.labels{
 		width:auto;
 		text-align:center;
@@ -28,10 +24,16 @@
 		.minrange{
 		text-align:center;
 		background:red;
+		color:white;
+		padding:5px;
+		 width:70px
 		}
 				.maxrange{
 		text-align:center;
 		background:purple;
+		color:white;
+		padding:5px;
+		 width:70px
 		}
 		#checkboxlabel{
 			width:auto;
@@ -47,7 +49,8 @@
 
 </head>
 <body>
-<form acction="http://ihome.ust.hk/~rossiter/cgi-bin/show_everything.php " method="post">
+<h1>Please Enter Your Details For Our Dating Website!</h1>
+<form acction="https://../" method="post">
     <fieldset>
         <legend>Your Face</legend>
 
@@ -82,16 +85,12 @@
 
         <label for Country>Which Country: </label>
         <select id="Country" name="Country">
-            <option value="no selection></option>
-            <option value=" volvo>USA
-            </option>
-            <option value="saab>UK</option>
-            <option value=" fiat>LT
-            </option>
-            <option value="audi>FR</option>
-            <option value=" audi>AU
-            </option>
-            <br>
+            <option value="no selection"selected="">No selection</option>
+            <option value="volvo">USA</option>
+            <option value="saab">UK</option>
+            <option value="fiat">LT</option>
+            <option value="audi">FR</option>
+            <option value="audi">AU</option>
         </select>
     </fieldset>
 
@@ -120,7 +119,7 @@
         <input type="tel" id="tel" name="tel"><br>
 
         <label for address> Address: </label>
-        <input type="textarea" id="address" name="address"><br>
+        <textarea row="3" cols="23" id="address" name="address"></textarea><br>
 
 
         <label for contacttype>Method to contact you:</label>
@@ -132,7 +131,7 @@
         <label for ckb_Inappchat class="labels"> In-app Chat</label>
 
     </fieldset>
-
+    <br>
     <input type="submit" value="Submit">
 </form>
 
